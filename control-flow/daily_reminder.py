@@ -7,17 +7,17 @@ time_bound = input("Is it time-bound? (yes/no):")
 match priority:
     case "high":
         if time_bound == "yes":
-            print(f"'{task}' is a {priority} priority task that requires immediate attention today!")
+            print(f"Reminder: '{task}' is a {priority} priority task that requires immediate attention today!")
         elif time_bound == "no":
-            print(f"'{task}' is a {priority} priority task. Consider completing it very soon.")
+            print(f"Note:'{task}' is a {priority} priority task. Consider completing it very soon.")
     case "medium":
         if time_bound == "yes":
-            print(f"'{task}' is a {priority} priority task that requires immediate attention today!")
+            print(f"Reminder: '{task}' is a {priority} priority task that requires immediate attention today!")
         elif time_bound == "no":
-            print(f"'{task}' is a {priority} priority task. Consider completing it very soon.")
+            print(f"Note: '{task}' is a {priority} priority task. Consider completing it very soon.")
     case "low":
         if time_bound == "yes":
-            print(f"'{task}' is a {priority} priority task that requires immediate attention today!")
+            print(f"Reminder: '{task}' is a {priority} priority task that requires immediate attention today!")
         elif time_bound == "no":
-            print(f"'{task}' is a {priority} priority task. Consider completing it very soon.")    
+            print(f"Note: '{task}' is a {priority} priority task. Consider completing it very soon.")    
     
