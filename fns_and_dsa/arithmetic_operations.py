@@ -5,15 +5,23 @@ def perform_operation(num1, num2, operation):
         print("Division by zero not possible") 
         exit()
     else:
-        match operation:
-            case "add":
-                result = int(num1) + int(num2)
-            case "subtract":
-                result = int(num1) - int(num2)
-            case "multiply":
-                result = int(num1) * int(num2)
-            case "divide":
-                result = int(num1) / int(num2)
+        # match operation:
+        #     case "add":
+        #         result = int(num1) + int(num2)
+        #     case "subtract":
+        #         result = int(num1) - int(num2)
+        #     case "multiply":
+        #         result = int(num1) * int(num2)
+        #     case "divide":
+        #         result = int(num1) / int(num2)
+        if operation == "add":
+            result = int(num1) + int(num2)
+        elif operation =="subtract":
+            result = int(num1) - int(num2)
+        elif operation == "multiply":
+            result = int(num1) * int(num2)
+        elif operation == "divide":
+            result = int(num1) / int(num2)
 
     return result
 
