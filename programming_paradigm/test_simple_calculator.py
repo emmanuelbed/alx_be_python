@@ -9,20 +9,16 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(self.calc.add(5,3), 8)
 
     def test_subtract(self):
-        result = self.calc.subtract(5,3)
-        self.assertEqual(result, 2)
+        self.assertEqual(self.calc.subtract(5,3), 2)
         
     def test_multiply(self):
-        result = self.calc.multiply(5,3)
-        self.assertEqual(result, 15)
+        self.assertEqual(self.calc.multiply(5,3), 15)
 
     def test_divide(self):
-        result = self.calc.divide(6,3)
-        self.assertEqual(result, 2)
+        self.assertEqual(self.calc.divide(6,3), 2)
 
     def test_divide_by_zero(self):
-        result = self.calc.divide(5, 0)
-        self.assertEqual(result, None)
+        self.assertEqual(self.calc.divide(5, 0), None)
 
 if __name__ == "__main__":
     unittest.main()
